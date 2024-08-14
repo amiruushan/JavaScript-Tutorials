@@ -22,8 +22,25 @@ console.log(`My name is ${name}`);
 console.log(typeof age);
 console.log(typeof name);
 
+// booleans
+console.log(`_______________________`);
+let isThisForSale = true;
+console.log(typeof isThisForSale);
+console.log(`This vehicle is for sale: ${isThisForSale}`);
+
+
+// Exercise
+let firstName = "Amiru";
+let myAge = 19;
+let isStudent = true;
+
+document.getElementById("p1").textContent = `Your Name: ${firstName}`;
+document.getElementById("p2").textContent = `Your Age: ${myAge}`;
+document.getElementById("p3").textContent = `Are you a Student: ${isStudent}`;
+
+
 // activity
-console.log(`________________`);
-let num = 2;
-let type = typeof num;
-console.log(`${num} is a ${type}`);
+// console.log(`________________`);
+// let num = 2;
+// let type = typeof num;
+// console.log(`${num} is a ${type}`);
