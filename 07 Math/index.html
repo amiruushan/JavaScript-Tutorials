@@ -1,3 +1,7 @@
+<!-- Math
+built in JS object that provides a collection of mathematical properties and methods -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,6 +32,13 @@
     <p id="p3"></p>
     <p id="p4"></p>
     <p id="p5"></p>
+    <p id="p6"></p>
+    <p id="p7"></p>
+    <p id="p8"></p>
+    <p id="p9"></p>
+    <p id="p10"></p> <br>
+    <p>BONUS!!!</p>
+    <p id="p11"></p>
 
     <!-- javascript -->
     <script>
@@ -50,7 +61,33 @@
         let x = 2;
         let y = 3;
         document.getElementById("p5").textContent = `2^3 = ${Math.pow(x, y)}`;
+
+        // math.trunc (eliminate the decimal part)
+        let d = 5.2345;
+        document.getElementById("p6").textContent = `truncate of 5.2345 : ${Math.trunc(d)}`;
+        
+        // trigonometric functions
+        let angle = 90;
+        document.getElementById("p7").textContent = `tan of 90 = ${Math.tan(angle)}`;
+        document.getElementById("p8").textContent = `cos of 90 = ${Math.cos(angle)}`;
+
+        // abs - absolute (value of the number)
+        let a1 = -6.76;
+        document.getElementById("p9").textContent = `absolute of -6.76 = ${Math.abs(a1)}`;
+
+        // max min
+        let b1 = 3;
+        let b2 = 9;
+        let b3 = 1;
+        let b4 = 10;
+        document.getElementById("p10").textContent = `${b1}, ${b2}, ${b3}, ${b4} : Max is ${Math.max(b1,b2,b3,b4)} and Min is ${Math.min(b1,b2,b3,b4)}`;
+    
+        // BONUS!!! 
+        // rounding off to the nearest decimal place
+        let no = 5.342243;
+        document.getElementById("p11").textContent = `5.342243 To nearest 2nd decimal place = ${no.toFixed(2)}`;
     </script>
+
 </body>
 
 </html>
