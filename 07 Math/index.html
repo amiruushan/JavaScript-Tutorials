@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css -->
+    <style>
+        h1{
+            text-align: center;
+            font-family: helvetica;
+            color: chocolate;
+        }
+
+        p{
+            font-family: verdana;
+            font-size: 1em;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Math Object</h1>
+    <p id="p1"></p> 
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+
+    <!-- javascript -->
+    <script>
+        //pi
+        document.getElementById("p1").textContent = `Value of PI : ${Math.PI}`;
+
+        // math.round (round)
+        let a = 3.5635;
+        document.getElementById("p2").textContent = `round of 3.5635 : ${Math.round(a)}`;
+
+        // math.floor (round down)
+        let b = 4.999;
+        document.getElementById("p3").textContent = `floor of 4.999 : ${Math.floor(b)}`;
+
+        // math.ceil (round up)
+        let c = 4.111;
+        document.getElementById("p4").textContent = `ceil of 4.111 : ${Math.ceil(c)}`;
+
+        // math.pow (power)
+        let x = 2;
+        let y = 3;
+        document.getElementById("p5").textContent = `2^3 = ${Math.pow(x, y)}`;
+    </script>
+</body>
+
+</html>
