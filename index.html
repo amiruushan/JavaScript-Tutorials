@@ -3,11 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LengthConvo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+   <form>
     <h1>Length Convertion</h1>
-    <h2>hello</h2>
+    <!-- input field -->
+    <input type="number" id="inputValue" value="0"><br>
+
+    <!-- m to cm -->
+    <input type="radio" id="toCm" name="units">
+    <label for="toCm">Meters ➡️ Centimeters</label><br><br>
+
+    <!-- cm to m -->
+    <input type="radio" id="toMm" name="units">
+    <label for="toMm">Centimeters ➡️ Meters</label><br>
+
+    <button type="button" id="submitBtn" onclick="convert()">Submit</button>
+
+    <!-- result -->
+     <p id="result"></p>
+   </form>
     
+
+   <script src="script.js"></script>
 </body>
 </html>
