@@ -35,7 +35,7 @@ label {
 
 #submitBtn {
     margin-top: 15px;
-    background-color:red;
+    background-color: red;
     color: white;
     font-size: 1.5em;
     border-radius: 5px;
@@ -46,10 +46,60 @@ label {
 
 #submitBtn:hover {
     background-color: hsla(0, 100%, 50%, 0.607);
-    /* color: red; */
 }
 
 #result {
     font-size: 1.6em;
     font-weight: bold;
+}
+
+/* Media queries for mobile devices */
+@media (max-width: 768px) {
+    form {
+        max-width: 90%; /* Increase form width to utilize more screen space */
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    #inputValue {
+        width: 80%; /* Adjust input field width for smaller screens */
+        font-size: 1.5em; /* Reduce font size for input field */
+    }
+
+    label {
+        font-size: 1.2em; /* Reduce font size for labels */
+    }
+
+    #submitBtn {
+        font-size: 1.2em; /* Reduce font size for button */
+        padding: 8px 10px; /* Adjust padding for button */
+    }
+
+    #result {
+        font-size: 1.4em; /* Reduce font size for result text */
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        max-width: 95%; /* Further increase form width */
+        padding: 10px; /* Further reduce padding */
+    }
+
+    #inputValue {
+        width: 90%; /* Maximize input field width */
+        font-size: 1.2em; /* Further reduce font size for input field */
+    }
+
+    label {
+        font-size: 1em; /* Further reduce font size for labels */
+    }
+
+    #submitBtn {
+        font-size: 1em; /* Further reduce font size for button */
+        padding: 6px 8px; /* Further adjust padding for button */
+    }
+
+    #result {
+        font-size: 1.2em; /* Further reduce font size for result text */
+    }
 }
